@@ -9,4 +9,4 @@ import"./assets/styles-C-pZQAcI.js";import{S as i}from"./assets/vendor-CgTBfC_f.
       </a>
     </li>
   `).join("");e.innerHTML=n;new i(".gallery a",{captionsData:"alt",captionDelay:250});
-//# sourceMappingURL=01-gallery.js.map
+//# sourceMappingURL=1-gallery.js.map

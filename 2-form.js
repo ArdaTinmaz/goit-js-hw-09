@@ -1,2 +1,2 @@
 import"./assets/styles-C-pZQAcI.js";const s="feedback-form-state",e=document.querySelector(".feedback-form"),l=e.elements.email,m=e.elements.message,a=JSON.parse(localStorage.getItem(s));a&&(l.value=a.email||"",m.value=a.message||"");e.addEventListener("input",()=>{const t={email:l.value,message:m.value};localStorage.setItem(s,JSON.stringify(t))});e.addEventListener("submit",t=>{t.preventDefault(),console.log("Form gönderildi:",{email:l.value,message:m.value}),e.reset(),localStorage.removeItem(s)});
-//# sourceMappingURL=02-form.js.map
+//# sourceMappingURL=2-form.js.map
