@@ -16,3 +16,137 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+
+ul, li {
+  list-style: none;
+}
+
+.gallery-container{
+  font-family: Arial, sans-serif;
+  background-color: #F0F0F0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.gallery {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+/* 3 sütunlu düzen */
+gap: 20px;
+padding: 20px;
+max-width: 1200px;
+width: 100%;
+}
+.gallery-item {
+list-style: none;
+background-color: white;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+.gallery-item:hover {
+transform: scale(1.05);
+}
+.gallery-link {
+display: block;
+}
+.gallery-image {
+width: 100%;
+height: auto;
+display: block;
+border-bottom: 3px solid #ddd;
+}
+.go-back a{
+  text-decoration: none;
+      border: 2px solid black;
+      background: #4e75ff;
+      width: 80px;
+      height: 40px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.04em;
+      color: #fff;
+  margin-left: 10px;
+}
+.form-page {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Geri dönüş bağlantısı sol üstte sabit kalsın */
+.go-back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 16px;
+}
+
+/* Form stilleri */
+.form-page .feedback-form {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 183, 123, 0.7);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Etiket ve giriş alanları */
+.feedback-form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #f78e69;
+  outline: none;
+}
+
+/* Gönder butonu */
+.feedback-form button {
+  display: block;
+  margin: 20px auto 0 auto; /* Üstten boşluk ve otomatik yatay ortalama */
+  padding: 10px 20px;
+  background-color: #ff7b39;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-form button:hover {
+  background-color: #ff9966;
+}
