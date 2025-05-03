@@ -1,21 +1,57 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+.gallery-page {
+  background-color: white; 
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.background-container {
+  position: absolute; /* Sayfanın tamamını kapsaması için */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #ffb6c1, #8a2be2); /* Pembe-mor geçiş */
+  z-index: -1; /* İçeriğin önünde olmasın */
+}
+
+
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  width: 320px;
+  border-radius: 20px;
+  border: 8px solid transparent;
+  background-clip: padding-box;  /* Arka planı border'ın içinde göstermek için */
+  box-shadow: 0 0 0 8px rgba(184, 62, 255, 1), /* Mor -> Koyu Mor */
+              0 0 0 16px rgba(75, 0, 130, 0.8); /* Koyu mor */
+  background: linear-gradient(135deg, #ffb6c1, #8a2be2); /* Pembe → Mor geçiş */
+}
+
+
+.main-container a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #e75480, #da70d6); /* sıcak pembe → orkide moru */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-container a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
 
 
 ul, li {
